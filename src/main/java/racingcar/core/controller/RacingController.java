@@ -42,7 +42,7 @@ public class RacingController {
         racingView.printFinalWinners(winners);
     }
 
-    public RacingProperties getProperties() {
+    private RacingProperties getProperties() {
         return RacingProperties.builder()
                 .carNameFilter(this::allowAllCarNameFilter)
                 .carPositionPrinter(this::defalutCarPositionPrinter)
